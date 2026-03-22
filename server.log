@@ -1,0 +1,225 @@
+
+> manager-backend@1.0.0 dev
+> nodemon server.js
+
+[33m[nodemon] 3.1.11[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.3.1] injecting env (3) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🔌 Connecting to MongoDB Atlas... mongodb+srv://employeportal:NextEmploy%40%23%24%40%23@cluster0.lvklvu9.mongodb.net/?retryWrites=true&w=majority
+✅ MongoDB Atlas Connected
+Trying to bind server to port 5001...
+🚀 Server + Socket running on http://localhost:5001
+🔌 Client connected: W5WJA6EWgsBcjkFqAAAB
+Register socket error: Cannot overwrite `Team` model once compiled.
+(node:8685) [MONGOOSE] Warning: mongoose: Duplicate schema index on {"task_id":1} for model "Task". This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔌 Client connected: Gs4QEpPws1enyY7MAAAD
+Register socket error: Cannot overwrite `Team` model once compiled.
+699d6ced9dc8dc2730c3ae9c
+699d6ced9dc8dc2730c3ae9c
+699d6ced9dc8dc2730c3ae9c
+❌ Client disconnected: W5WJA6EWgsBcjkFqAAAB
+🔌 Client connected: JrcSugqdWW8KdLirAAAF
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: JrcSugqdWW8KdLirAAAF
+👤 699d6ced9dc8dc2730c3ae9c went offline
+🔌 Client connected: 5eei7MfSwbabbUlUAAAH
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: 5eei7MfSwbabbUlUAAAH
+👤 699d6ced9dc8dc2730c3ae9c went offline
+🔌 Client connected: vTE_JjjfGmPwsZIRAAAJ
+Register socket error: Cannot overwrite `Team` model once compiled.
+699d6ced9dc8dc2730c3ae9c
+❌ Client disconnected: Gs4QEpPws1enyY7MAAAD
+🔌 Client connected: LQZBmZewXc7pciV2AAAL
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: vTE_JjjfGmPwsZIRAAAJ
+❌ Client disconnected: LQZBmZewXc7pciV2AAAL
+👤 699d6ced9dc8dc2730c3ae9c went offline
+🔌 Client connected: tfvsDghhr5BzQO7IAAAN
+Register socket error: Cannot overwrite `Team` model once compiled.
+🔌 Client connected: ZdX4AjJJtRNrTmnhAAAP
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: tfvsDghhr5BzQO7IAAAN
+❌ Client disconnected: ZdX4AjJJtRNrTmnhAAAP
+👤 699d6ced9dc8dc2730c3ae9c went offline
+🔌 Client connected: _nVfvOSBnFWlReKOAAAR
+Register socket error: Cannot overwrite `Team` model once compiled.
+🔌 Client connected: ISuTRddQAK3BAD0RAAAT
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: _nVfvOSBnFWlReKOAAAR
+❌ Client disconnected: ISuTRddQAK3BAD0RAAAT
+👤 699d6ced9dc8dc2730c3ae9c went offline
+🔌 Client connected: pgE56KGAJ2860hoFAAAV
+Register socket error: Cannot overwrite `Team` model once compiled.
+🔌 Client connected: Iw-Np0-JHxdw1EIJAAAX
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: pgE56KGAJ2860hoFAAAV
+❌ Client disconnected: Iw-Np0-JHxdw1EIJAAAX
+👤 699d6ced9dc8dc2730c3ae9c went offline
+🔌 Client connected: y-ZKkwiRFVgBFbMlAAAZ
+Register socket error: Cannot overwrite `Team` model once compiled.
+🔌 Client connected: FknddtStM7GNVxbwAAAb
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: FknddtStM7GNVxbwAAAb
+👤 699d6ced9dc8dc2730c3ae9c went offline
+undefined monica.kim@company.com password
+User object fetched...
+Comparing password...
+Compare Password Status: true
+Updating last active...
+lastActive updated!
+Generating token...
+Sending response...
+👤 Employee ID for Check-In: 699d6c8a9dc8dc2730c3ae95
+Error: Already checked in today
+🔌 Client connected: SgCAYMRJ5p0hG8r8AAAd
+Register socket error: Cannot overwrite `Team` model once compiled.
+{
+  checkIn: 2026-03-09T01:59:53.105Z,
+  checkOut: null,
+  status: 'checked-in',
+  idleTotalTime: 0,
+  idleEvents: [],
+  breakEvents: []
+}
+699d6ced9dc8dc2730c3ae9c
+❌ Chat send error: Message.create is not a function
+699d6c8a9dc8dc2730c3ae95
+❌ Chat send error: Message.create is not a function
+699d6ced9dc8dc2730c3ae9c
+❌ Company Chat send error: Message.create is not a function
+❌ Company Chat send error: Message.create is not a function
+❌ Client disconnected: y-ZKkwiRFVgBFbMlAAAZ
+🔌 Client connected: 3yRyGhMDW2t-0-hZAAAf
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: SgCAYMRJ5p0hG8r8AAAd
+🔌 Client connected: xAB1eo22hjaNE-twAAAh
+Register socket error: Cannot overwrite `Team` model once compiled.
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+❌ Client disconnected: xAB1eo22hjaNE-twAAAh
+👤 699d6c8a9dc8dc2730c3ae95 went offline
+🔌 Client connected: wAk0Ac7o_aau-zmjAAAj
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: 3yRyGhMDW2t-0-hZAAAf
+❌ Client disconnected: wAk0Ac7o_aau-zmjAAAj
+👤 699d6c8a9dc8dc2730c3ae95 went offline
+Marked 1 employees offline
+Marked 1 employees offline
+undefined monica.kim@company.com password
+User object fetched...
+Comparing password...
+Compare Password Status: true
+Updating last active...
+lastActive updated!
+Generating token...
+Sending response...
+👤 Employee ID for Check-In: 699d6c8a9dc8dc2730c3ae95
+Error: Already checked in today
+🔌 Client connected: z9MRKPowFdvIJ_fYAAAl
+Register socket error: Cannot overwrite `Team` model once compiled.
+{
+  checkIn: 2026-03-09T01:59:53.105Z,
+  checkOut: null,
+  status: 'checked-in',
+  idleTotalTime: 0,
+  idleEvents: [],
+  breakEvents: []
+}
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+{
+  checkIn: 2026-03-09T01:59:53.105Z,
+  checkOut: null,
+  status: 'checked-in',
+  idleTotalTime: 0,
+  idleEvents: [],
+  breakEvents: []
+}
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+{
+  checkIn: 2026-03-09T01:59:53.105Z,
+  checkOut: null,
+  status: 'checked-in',
+  idleTotalTime: 0,
+  idleEvents: [],
+  breakEvents: []
+}
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+{
+  checkIn: 2026-03-09T01:59:53.105Z,
+  checkOut: null,
+  status: 'checked-in',
+  idleTotalTime: 0,
+  idleEvents: [],
+  breakEvents: []
+}
+699d6c8a9dc8dc2730c3ae95
+❌ Client disconnected: z9MRKPowFdvIJ_fYAAAl
+👤 699d6c8a9dc8dc2730c3ae95 went offline
+🔌 Client connected: umLwT_kzRS_k_AHpAAAn
+Register socket error: Cannot overwrite `Team` model once compiled.
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+❌ Client disconnected: umLwT_kzRS_k_AHpAAAn
+👤 699d6c8a9dc8dc2730c3ae95 went offline
+🔌 Client connected: KjNKrS9M2Uy611jaAAAp
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Company Chat send error: Message.create is not a function
+699d6c8a9dc8dc2730c3ae95
+699d6c8a9dc8dc2730c3ae95
+❌ Company Chat send error: Message.create is not a function
+699d6c8a9dc8dc2730c3ae95
+❌ Client disconnected: KjNKrS9M2Uy611jaAAAp
+👤 699d6c8a9dc8dc2730c3ae95 went offline
+🔌 Client connected: Nyn7xRAi5Hi6Vrc0AAAr
+Register socket error: Cannot overwrite `Team` model once compiled.
+699d6c8a9dc8dc2730c3ae95
+❌ Client disconnected: Nyn7xRAi5Hi6Vrc0AAAr
+👤 699d6c8a9dc8dc2730c3ae95 went offline
+🔌 Client connected: quK0qewQY3mUK9H6AAAt
+Register socket error: Cannot overwrite `Team` model once compiled.
+❌ Client disconnected: quK0qewQY3mUK9H6AAAt
+👤 699d6c8a9dc8dc2730c3ae95 went offline
+🔌 Client connected: vO1GtIt-Lhlg43rfAAAv
+Register socket error: Cannot overwrite `Team` model once compiled.
+{
+  checkIn: 2026-03-09T01:59:53.105Z,
+  checkOut: null,
+  status: 'checked-in',
+  idleTotalTime: 0,
+  idleEvents: [],
+  breakEvents: []
+}
+699d6c8a9dc8dc2730c3ae95
+❌ Client disconnected: vO1GtIt-Lhlg43rfAAAv
+👤 699d6c8a9dc8dc2730c3ae95 went offline
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read EIO
+    at TTY.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+  errno: -5,
+  code: 'EIO',
+  syscall: 'read'
+}
+
+Node.js v24.13.0

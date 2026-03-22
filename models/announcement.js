@@ -1,0 +1,44 @@
+const mongoose = require("mongoose");
+const announcementSchema = new mongoose.Schema({
+title:{
+    type:String,
+    required:true
+},
+message:{
+    type:String,
+    required:true
+},
+createdBy:{
+    type:String,
+    required:true
+},
+creatorRole:{
+    type:String,
+    enum:["admin","hr","manager","team_lead"],
+    required:true
+},
+audienceType:{
+    type:String,
+    enum:["all","managers","teams","hr","team_leads"],
+    default:"all"
+},
+teams:[{
+    type:mongoose.Schema.Types.ObjectId,
+    ref:"Team"
+}],
+priority:{
+    type:String,
+    enum:["low","medium","high"],
+    default:"medium"
+},
+readBy:[{
+    userId:String,
+    readAt:Date
+}],
+isActive:{
+    type:Boolean,
+    default:true
+}
+},
+{timestamps:true});
+module.exports = mongoose.model("Announcement",announcementSchema);

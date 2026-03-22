@@ -1,0 +1,340 @@
+{
+  "info": {
+    "name": "Department Management API",
+    "description": "Complete API collection for Department Management module",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000/api",
+      "type": "string"
+    },
+    {
+      "key": "token",
+      "value": "YOUR_JWT_TOKEN_HERE",
+      "type": "string"
+    },
+    {
+      "key": "departmentId",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Create Department",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Cybersecurity\",\n  \"code\": \"CYB\",\n  \"description\": \"Responsible for protecting company's digital assets and infrastructure\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/departments",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments"]
+        },
+        "description": "Create a new department. Requires Admin or HR role."
+      },
+      "response": []
+    },
+    {
+      "name": "2. Get All Departments",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/departments",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments"]
+        },
+        "description": "Get all departments with populated data"
+      },
+      "response": []
+    },
+    {
+      "name": "3. Get All Active Departments",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/departments?isActive=true",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments"],
+          "query": [
+            {
+              "key": "isActive",
+              "value": "true"
+            }
+          ]
+        },
+        "description": "Get only active departments"
+      },
+      "response": []
+    },
+    {
+      "name": "4. Get Department by ID",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/departments/{{departmentId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments", "{{departmentId}}"]
+        },
+        "description": "Get detailed information about a specific department"
+      },
+      "response": []
+    },
+    {
+      "name": "5. Update Department",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Cybersecurity & Compliance\",\n  \"description\": \"Updated description for cybersecurity department\",\n  \"isActive\": true\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/departments/{{departmentId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments", "{{departmentId}}"]
+        },
+        "description": "Update department details. All fields are optional."
+      },
+      "response": []
+    },
+    {
+      "name": "6. Assign Employees to Department",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeIds\": [\n    \"507f1f77bcf86cd799439013\",\n    \"507f1f77bcf86cd799439014\",\n    \"507f1f77bcf86cd799439015\"\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/departments/{{departmentId}}/assign",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments", "{{departmentId}}", "assign"]
+        },
+        "description": "Assign multiple employees to a department. Updates both department and user records."
+      },
+      "response": []
+    },
+    {
+      "name": "7. Remove Employees from Department",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeIds\": [\n    \"507f1f77bcf86cd799439013\",\n    \"507f1f77bcf86cd799439014\"\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/departments/{{departmentId}}/remove",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments", "{{departmentId}}", "remove"]
+        },
+        "description": "Remove employees from a department"
+      },
+      "response": []
+    },
+    {
+      "name": "8. Delete Department",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/departments/{{departmentId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments", "{{departmentId}}"]
+        },
+        "description": "Delete a department. Will fail if employees are assigned to it."
+      },
+      "response": []
+    },
+    {
+      "name": "Example: Create Engineering Dept",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Engineering\",\n  \"code\": \"ENG\",\n  \"description\": \"Software development and technical operations\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/departments",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Example: Create Marketing Dept",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Marketing\",\n  \"code\": \"MKT\",\n  \"description\": \"Marketing, branding, and customer outreach\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/departments",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Example: Create Operations Dept",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Operations\",\n  \"code\": \"OPS\",\n  \"description\": \"Business operations and process management\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/departments",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Example: Create HR Dept",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Human Resources\",\n  \"code\": \"HR\",\n  \"description\": \"Employee management, recruitment, and HR policies\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/departments",
+          "host": ["{{baseUrl}}"],
+          "path": ["departments"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
